@@ -2,346 +2,255 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#050a12" />
-  <meta name="description" content="آموزش صفر تا صد ساخت ویدیوی آواتار واقعی فارسی با عکس‌های خودت در Google Flow؛ انتخاب عکس مرجع، Omni Flash، صدای فارسی، حفظ هویت، پرامپت‌های آماده و رفع خطا." />
-  <title>ساخت آواتار واقعی فارسی با Google Flow | Soheil AI Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#05080f" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="description" content="آموزش ساده و مرحله‌به‌مرحله ساخت ویدیوی آواتار فارسی با عکس‌های خودت در Google Flow؛ همراه با پرامپت کامل، جایگاه متن و سناریو و تنظیمات پیشنهادی." />
+  <title>ساخت ویدیوی آواتار خودت با Google Flow | Soheil AI Systems</title>
   <style>
-    :root{--bg:#03060c;--bg2:#07111e;--card:rgba(10,22,38,.84);--card2:rgba(8,16,29,.9);--line:rgba(255,255,255,.10);--line2:rgba(80,166,255,.20);--text:#f6f8fc;--muted:#aab8ca;--blue:#2f8cff;--cyan:#68d6ff;--gold:#d8ad55;--ok:#40d7a5;--danger:#ff6b7a;--shadow:0 28px 90px rgba(0,0,0,.48)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--text);background:radial-gradient(circle at 10% 4%,rgba(47,140,255,.20),transparent 28rem),radial-gradient(circle at 88% 14%,rgba(104,214,255,.10),transparent 24rem),linear-gradient(180deg,#07111e 0%,#040912 34%,#02050a 100%);font-family:Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.95}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(to bottom,black,transparent 82%)}a{color:inherit}.wrap{width:min(1100px,calc(100% - 28px));margin:auto;position:relative;z-index:1}.topbar{margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 12px;border:1px solid var(--line);border-radius:16px;background:rgba(5,12,22,.72);backdrop-filter:blur(18px);box-shadow:0 12px 35px rgba(0,0,0,.22)}.brand-mini{display:flex;align-items:center;gap:9px;font-size:13px;color:#dceaff}.dot{width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 20px var(--blue)}.social-mini{display:flex;gap:8px;flex-wrap:wrap}.social-mini a{text-decoration:none;font-size:12px;color:#dce8f8;padding:6px 9px;border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.035)}.hero{padding:68px 0 38px;text-align:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border:1px solid var(--line2);border-radius:999px;background:rgba(47,140,255,.08);color:#cfe6ff;font-size:13px}.hero h1{margin:22px auto 14px;max-width:970px;font-size:clamp(32px,6vw,66px);line-height:1.22;letter-spacing:-1.7px}.gradient{background:linear-gradient(90deg,#fff 0%,#9ed2ff 48%,#e3c77a 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{max-width:850px;margin:0 auto;color:var(--muted);font-size:clamp(15px,2.3vw,19px)}.hero-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}.hero-btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;padding:11px 16px;border-radius:13px;border:1px solid var(--line);background:rgba(255,255,255,.04);font-weight:700;font-size:14px}.hero-btn.primary{background:linear-gradient(135deg,#2f8cff,#1763c8);border-color:transparent;box-shadow:0 12px 35px rgba(47,140,255,.22)}.hero-btn.instagram{background:linear-gradient(135deg,rgba(255,62,129,.16),rgba(117,62,255,.15));border-color:rgba(255,111,178,.24)}.flow{margin:34px auto 0;display:flex;justify-content:center;align-items:center;gap:9px;flex-wrap:wrap}.flow span{border:1px solid var(--line);background:rgba(255,255,255,.04);padding:9px 13px;border-radius:12px;font-size:13px}.arrow{color:var(--cyan);font-weight:800}.nav{margin:28px 0 6px;display:flex;gap:9px;justify-content:center;flex-wrap:wrap}.nav a{text-decoration:none;border:1px solid var(--line);border-radius:12px;padding:9px 13px;background:rgba(255,255,255,.035);color:#dce8f8;font-size:13px}.section{margin:24px 0}.card{background:linear-gradient(180deg,rgba(14,28,46,.90),rgba(7,15,27,.90));border:1px solid var(--line);border-radius:25px;padding:28px;box-shadow:var(--shadow);backdrop-filter:blur(18px);position:relative;overflow:hidden}.card:before{content:"";position:absolute;inset:0 0 auto 0;height:1px;background:linear-gradient(90deg,transparent,rgba(104,214,255,.35),transparent)}.step-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:14px}.num{flex:0 0 46px;height:46px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,var(--blue),#175fca);font-weight:800;font-size:18px;box-shadow:0 10px 28px rgba(47,140,255,.25)}h2{margin:0;font-size:clamp(22px,4vw,31px);line-height:1.45}h3{margin:23px 0 8px;font-size:19px}p{margin:9px 0}.muted{color:var(--muted)}.tip{margin-top:17px;padding:14px 16px;border-right:3px solid var(--gold);background:rgba(216,173,85,.07);border-radius:12px;color:#f5e6bf}.success{border-right-color:var(--ok);background:rgba(64,215,165,.07);color:#ccfaeb}.danger{border-right-color:var(--danger);background:rgba(255,107,122,.07);color:#ffd5da}.info{border-right-color:var(--blue);background:rgba(47,140,255,.07);color:#d6ebff}.prompt-box{margin-top:17px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#020711}.prompt-top{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.035)}.prompt-title{font-size:14px;color:#cee5ff;font-weight:700}button{border:0;cursor:pointer;color:#fff;border-radius:10px;padding:9px 13px;background:linear-gradient(135deg,#2f8cff,#1763c8);font-family:inherit;font-weight:700}button:hover{filter:brightness(1.08)}pre{margin:0;padding:19px;direction:ltr;text-align:left;white-space:pre-wrap;overflow-wrap:anywhere;color:#dce6f3;font-family:Consolas,Monaco,monospace;font-size:12.5px;line-height:1.78}.settings{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:18px}.setting{padding:14px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.035)}.setting b{display:block;color:#fff;margin-bottom:2px}.setting small{color:var(--muted)}.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.link-btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:#eaf4ff}.link-btn.flow-link{background:linear-gradient(135deg,rgba(47,140,255,.18),rgba(104,214,255,.08));border-color:rgba(82,172,255,.28)}.link-btn.ig-link{background:linear-gradient(135deg,rgba(255,61,129,.13),rgba(118,62,255,.13));border-color:rgba(255,111,178,.20)}.checklist{margin:12px 0;padding:0;list-style:none}.checklist li{position:relative;padding:7px 31px 7px 0;color:#dce7f5}.checklist li:before{content:"✓";position:absolute;right:0;top:7px;color:var(--ok);font-weight:900}.steps{counter-reset:s;display:grid;gap:10px;margin-top:16px}.steps div{position:relative;padding:13px 48px 13px 14px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.028);color:#dce7f5}.steps div:before{counter-increment:s;content:counter(s);position:absolute;right:12px;top:12px;width:25px;height:25px;display:grid;place-items:center;border-radius:8px;background:rgba(47,140,255,.14);color:#9ed0ff;font-weight:800}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:17px}.mini{padding:17px;border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.035)}.mini strong{color:#fff}.code{direction:ltr;text-align:left;background:#030812;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-family:Consolas,monospace;color:#cfe6ff;overflow:auto}.badge{display:inline-flex;padding:4px 9px;border-radius:999px;background:rgba(47,140,255,.12);border:1px solid rgba(47,140,255,.25);color:#add6ff;font-size:12px}.cta-card{margin:28px 0;padding:24px;border:1px solid rgba(78,163,255,.20);border-radius:24px;background:radial-gradient(circle at 10% 0%,rgba(47,140,255,.17),transparent 20rem),linear-gradient(180deg,rgba(13,28,48,.92),rgba(7,14,26,.94));text-align:center;box-shadow:var(--shadow)}.cta-card h2{margin-bottom:8px}.footer{padding:38px 0 50px;text-align:center;color:#8797aa;font-size:13px}.footer strong{color:#dce7f5}.footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:12px}.footer-links a{text-decoration:none;padding:7px 10px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.03)}.copy-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);opacity:0;pointer-events:none;transition:.25s;padding:11px 16px;border-radius:12px;background:#111c2c;border:1px solid var(--line);color:#fff;z-index:99;box-shadow:var(--shadow)}.copy-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}@media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column}.hero{padding-top:46px}.card{padding:20px;border-radius:20px}.settings,.mini-grid{grid-template-columns:1fr 1fr}.flow{gap:7px}.flow span{font-size:12px;padding:7px 10px}.prompt-top{align-items:flex-start}pre{font-size:11.3px;padding:15px}}@media(max-width:520px){.settings,.mini-grid{grid-template-columns:1fr}.step-head{gap:10px}.num{flex-basis:40px;height:40px}.social-mini{width:100%}.social-mini a{flex:1;text-align:center}.hero-actions .hero-btn{width:100%;justify-content:center}}
+    :root{
+      --bg:#03060b;--bg2:#07101d;--panel:rgba(8,18,32,.88);--panel2:rgba(12,27,47,.78);
+      --line:rgba(255,255,255,.11);--white:#fff;--soft:rgba(255,255,255,.76);
+      --blue:#2388ff;--cyan:#62cfff;--silver:#dce6f3;--gold:#c9a95e;--ok:#4de0ae;
+      --shadow:0 28px 90px rgba(0,0,0,.55)
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;background:var(--bg);color-scheme:dark}
+    body{margin:0;min-height:100vh;background:
+      radial-gradient(circle at 14% 8%,rgba(35,136,255,.24),transparent 30rem),
+      radial-gradient(circle at 86% 16%,rgba(98,207,255,.11),transparent 24rem),
+      linear-gradient(180deg,#07111f 0%,#03060b 52%,#020409 100%);
+      color:#fff;font-family:Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.95;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:
+      linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+      background-size:38px 38px;mask-image:linear-gradient(to bottom,black,transparent 86%)}
+    body,body *{color:#fff}
+    a{text-decoration:none}.wrap{width:min(1080px,calc(100% - 28px));margin:auto;position:relative;z-index:1}
+    .hero{padding:72px 0 36px;text-align:center}.brand{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.045);box-shadow:inset 0 0 26px rgba(35,136,255,.07)}
+    .dot{width:9px;height:9px;border-radius:50%;background:var(--blue);box-shadow:0 0 24px var(--blue)}
+    h1{margin:22px auto 14px;max-width:940px;font-size:clamp(32px,6vw,66px);line-height:1.22;letter-spacing:-1.7px}
+    .gradient{background:linear-gradient(90deg,#fff 0%,#b9dcff 50%,#d8bd73 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+    .lead{max-width:820px;margin:0 auto;color:rgba(255,255,255,.78)!important;font-size:clamp(15px,2.2vw,19px)}
+    .hero-actions,.links{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 16px;border-radius:13px;border:1px solid var(--line);background:rgba(255,255,255,.05);font-weight:700;transition:.2s}
+    .btn.primary{background:linear-gradient(135deg,#2388ff,#145bbd);border-color:rgba(98,207,255,.34);box-shadow:0 14px 38px rgba(35,136,255,.25)}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+    .flow{margin:30px auto 0;display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap}.flow span{padding:8px 12px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.04);font-size:13px}.arrow{color:var(--cyan)!important;font-weight:900}
+    .nav{margin:24px 0 6px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}.nav a{padding:8px 12px;border-radius:11px;border:1px solid var(--line);background:rgba(255,255,255,.035);font-size:13px}
+    .section{margin:24px 0}.card{position:relative;overflow:hidden;background:linear-gradient(180deg,rgba(12,27,47,.9),rgba(5,12,22,.9));border:1px solid var(--line);border-radius:24px;padding:27px;box-shadow:var(--shadow);backdrop-filter:blur(18px)}
+    .card:after{content:"";position:absolute;width:180px;height:180px;left:-80px;top:-95px;border-radius:50%;background:radial-gradient(circle,rgba(35,136,255,.15),transparent 68%);pointer-events:none}
+    .step-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:14px}.num{flex:0 0 46px;height:46px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,#2388ff,#174f9f);font-weight:900;font-size:18px;box-shadow:0 10px 28px rgba(35,136,255,.28)}
+    h2{margin:0;font-size:clamp(22px,4vw,31px);line-height:1.45}h3{margin:21px 0 8px;font-size:19px}p{margin:9px 0}.muted{color:rgba(255,255,255,.72)!important}
+    .tip{margin-top:16px;padding:14px 16px;border-right:3px solid var(--gold);background:rgba(201,169,94,.075);border-radius:13px}.success{border-right-color:var(--ok);background:rgba(77,224,174,.07)}
+    .checklist{list-style:none;margin:12px 0 0;padding:0}.checklist li{position:relative;padding:6px 30px 6px 0}.checklist li:before{content:"✓";position:absolute;right:0;color:var(--ok)!important;font-weight:900}
+    .settings{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:17px}.setting{padding:14px;border-radius:15px;border:1px solid var(--line);background:rgba(255,255,255,.035)}.setting b{display:block;margin-bottom:2px}.setting small{color:rgba(255,255,255,.72)!important}
+    .prompt-box{margin-top:18px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#02060d}.prompt-top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;background:rgba(255,255,255,.045);border-bottom:1px solid var(--line)}.prompt-title{font-weight:800}.copy{border:0;cursor:pointer;border-radius:10px;padding:9px 13px;background:linear-gradient(135deg,#2388ff,#145bbd);font-family:inherit;font-weight:800}
+    pre{margin:0;padding:19px;direction:ltr;text-align:left;white-space:pre-wrap;overflow-wrap:anywhere;font-family:Consolas,Monaco,monospace;font-size:12.6px;line-height:1.8;color:#fff!important}
+    .placeholder{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:16px}.place{padding:16px;border:1px solid rgba(98,207,255,.2);border-radius:16px;background:rgba(35,136,255,.065)}.place code{display:block;margin:8px 0;padding:10px;border-radius:10px;background:#02060d;direction:ltr;text-align:left;color:#fff!important}
+    .example{margin-top:16px;padding:17px;border-radius:16px;background:linear-gradient(135deg,rgba(35,136,255,.085),rgba(201,169,94,.055));border:1px solid var(--line)}
+    .cta{padding:34px;text-align:center;background:radial-gradient(circle at 50% 0,rgba(35,136,255,.18),transparent 55%),linear-gradient(180deg,rgba(10,24,43,.96),rgba(4,10,18,.96))}.cta h2{font-size:clamp(26px,5vw,42px)}
+    .footer{padding:38px 0 52px;text-align:center}.socials{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:16px}.socials a{padding:9px 13px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.035)}
+    .copy-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);opacity:0;pointer-events:none;transition:.25s;padding:11px 16px;border-radius:12px;background:#101b2a;border:1px solid var(--line);z-index:99}.copy-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+    @media(max-width:820px){.hero{padding-top:48px}.card{padding:20px;border-radius:20px}.settings{grid-template-columns:1fr 1fr}.placeholder{grid-template-columns:1fr}.prompt-top{align-items:flex-start}pre{font-size:11.5px;padding:15px}}
+    @media(max-width:520px){.wrap{width:min(100% - 20px,1080px)}.settings{grid-template-columns:1fr}.hero-actions .btn,.links .btn{width:100%}.step-head{gap:10px}.num{flex-basis:40px;height:40px}.card{padding:17px}.cta{padding:26px 18px}.flow span{font-size:12px;padding:7px 9px}}
   </style>
 </head>
 <body>
 <main class="wrap">
-  <div class="topbar">
-    <div class="brand-mini"><span class="dot"></span><strong>SOHEIL AI SYSTEMS</strong></div>
-    <div class="social-mini">
-      <a href="https://www.instagram.com/soheil.ai.systems/" target="_blank" rel="noopener">Instagram · @soheil.ai.systems</a>
-      <a href="https://www.soheilai.com/" target="_blank" rel="noopener">soheilai.com</a>
-    </div>
-  </div>
-
   <section class="hero">
-    <div class="eyebrow"><span class="dot"></span> راهنمای عملی ساخت نسخه هوشمند خودت</div>
-    <h1><span class="gradient">از عکس خودت، یک آواتار واقعی بساز که فارسی حرف می‌زند</span></h1>
-    <p class="lead">این راهنما دقیقاً همان مسیری است که برای ساخت ویدیوی «من و نسخه هوشمندم» استفاده شد: انتخاب عکس مرجع، اتصال صحیح عکس‌ها به Flow، تنظیم Omni Flash، دیالوگ فارسی با لحن طبیعی، قفل هویت چهره، جهت نگاه و رفع خطاهای رایج.</p>
+    <div class="brand"><span class="dot"></span> SOHEIL AI SYSTEMS</div>
+    <h1><span class="gradient">با عکس خودت، ویدیوی تولید محتوا بساز</span></h1>
+    <p class="lead">ساده‌ترین مسیر برای ساخت نسخه ویدیویی خودت در Google Flow؛ عکس‌ها را اضافه کن، متن و سناریویت را داخل دو جای مشخص بنویس، پرامپت را کپی کن و خروجی بگیر.</p>
     <div class="hero-actions">
-      <a class="hero-btn primary" href="https://labs.google/fx/fa/tools/flow" target="_blank" rel="noopener">باز کردن Google Flow ↗</a>
-      <a class="hero-btn instagram" href="https://www.instagram.com/soheil.ai.systems/" target="_blank" rel="noopener">دیدن آموزش‌های بیشتر در اینستاگرام ↗</a>
+      <a class="btn primary" href="https://labs.google/fx/fa/tools/flow" target="_blank" rel="noopener">باز کردن Google Flow ↗</a>
+      <a class="btn" href="https://www.instagram.com/soheil.ai.systems/" target="_blank" rel="noopener">Instagram · @soheil.ai.systems ↗</a>
     </div>
-    <div class="flow"><span>عکس واقعی</span><b class="arrow">←</b><span>Flow</span><b class="arrow">←</b><span>Ingredients / Components</span><b class="arrow">←</b><span>Omni Flash</span><b class="arrow">←</b><span>دیالوگ فارسی</span><b class="arrow">←</b><span>ویدیوی آواتار</span></div>
-    <div class="nav"><a href="#route">انتخاب مسیر</a><a href="#prep">عکس‌های مرجع</a><a href="#flow">تنظیمات Flow</a><a href="#voice">صدای فارسی</a><a href="#prompt">پرامپت اصلی</a><a href="#custom">پرامپت عمومی</a><a href="#character">Character</a><a href="#fix">رفع مشکلات</a></div>
+    <div class="flow"><span>عکس واقعی</span><b class="arrow">←</b><span>متن خودت</span><b class="arrow">←</b><span>سناریوی خودت</span><b class="arrow">←</b><span>Google Flow</span><b class="arrow">←</b><span>ویدیوی آماده</span></div>
+    <div class="nav"><a href="#photos">۱. عکس‌ها</a><a href="#flow">۲. تنظیمات</a><a href="#prompt">۳. پرامپت آماده</a><a href="#example">۴. سناریوی نمونه</a></div>
   </section>
 
-  <section class="section card" id="route">
-    <div class="step-head"><div class="num">۰</div><div><h2>اول مسیر درست را انتخاب کن</h2><p class="muted">برای یک ویدیوی خاص، معمولاً لازم نیست اول Character بسازی.</p></div></div>
-    <div class="mini-grid">
-      <div class="mini"><span class="badge">پیشنهادی برای این آموزش</span><h3>بدون Character</h3><p>عکس‌های واقعی خودت را مستقیم به‌عنوان مرجع تصویری به درخواست ویدیو اضافه کن.</p><p class="muted">مناسب وقتی که یک کلیپ مشخص با لباس، زاویه و سناریوی مشخص می‌خواهی.</p></div>
-      <div class="mini"><span class="badge">برای استفاده مداوم</span><h3>با Character</h3><p>چند مرجع تصویری و یک صدا را داخل یک شخصیت reusable نگه دار.</p><p class="muted">مناسب وقتی که می‌خواهی بارها از همان شخصیت در پروژه‌های مختلف استفاده کنی.</p></div>
-    </div>
-    <div class="tip info"><strong>نسخه حرفه‌ای‌تر:</strong> اگر گزینه رسمی <b>Create avatar</b> را در حساب Flow می‌بینی، آن مسیر برای شباهت بصری و صوتی پایدارتر طراحی شده است. بعد از ساخت آواتار رسمی می‌توانی داخل Prompt از <span class="code">@me</span> استفاده کنی.</div>
-  </section>
-
-  <section class="section card" id="prep">
-    <div class="step-head"><div class="num">۱</div><div><h2>عکس‌های درست را آماده کن</h2><p class="muted">کیفیت و تنوع مرجع، روی ثبات چهره اثر مستقیم دارد.</p></div></div>
+  <section class="section card" id="photos">
+    <div class="step-head"><div class="num">۱</div><div><h2>دو عکس واقعی از خودت آماده کن</h2><p class="muted">هرچه عکس مرجع واضح‌تر باشد، شانس حفظ چهره بیشتر می‌شود.</p></div></div>
     <ul class="checklist">
-      <li><strong>عکس اصلی:</strong> روبه‌رو، واضح، بدون فیلتر سنگین و با نور مناسب.</li>
-      <li><strong>عکس دوم:</strong> سه‌رخ یا زاویه‌ای نزدیک به زاویه‌ای که در ویدیو می‌خواهی.</li>
-      <li><strong>لباس:</strong> اگر استایل خاصی مهم است، یک عکس واضح با همان لباس اضافه کن.</li>
-      <li>عکس AI‌شده را مرجع اصلی هویت قرار نده؛ عکس واقعی بهتر است.</li>
-      <li>عکس تار، بسیار دور، پوشیده، با عینک آفتابی یا نور شدید انتخاب نکن.</li>
+      <li>یک عکس واضح و روبه‌رو از صورت واقعی خودت.</li>
+      <li>یک عکس سه‌رخ یا عکسی با همان لباس و استایلی که دوست داری در ویدیو داشته باشی.</li>
+      <li>فیلتر سنگین، عکس تار یا عکس AI‌شده را به‌عنوان مرجع اصلی استفاده نکن.</li>
+      <li>صورت، خط مو، چشم‌ها و جزئیات اصلی چهره کاملاً مشخص باشند.</li>
     </ul>
-    <div class="tip success"><strong>ترتیب پیشنهادی:</strong> عکس روبه‌رو را مرجع اصلی هویت در نظر بگیر و عکس سه‌رخ را فقط برای فرم سر، مو و زاویه استفاده کن. این موضوع را داخل پرامپت هم صریح مشخص می‌کنیم تا مدل کمتر بین عکس‌ها یک چهره جدید بسازد.</div>
+    <div class="tip success"><strong>ساده نگهش دار:</strong> برای شروع همان ۲ عکس کافی است. لازم نیست اول Character بسازی.</div>
   </section>
 
   <section class="section card" id="flow">
-    <div class="step-head"><div class="num">۲</div><div><h2>وارد Google Flow شو و پروژه را بساز</h2><p class="muted">مراحل را دقیق به همین ترتیب انجام بده.</p></div></div>
-    <div class="links">
-      <a class="link-btn flow-link" href="https://labs.google/fx/fa/tools/flow" target="_blank" rel="noopener">Google Flow فارسی ↗</a>
-    </div>
-    <div class="steps">
-      <div>با حساب گوگل وارد Flow شو و روی <strong>New Project</strong> بزن.</div>
-      <div>در پایین کادر Prompt، حالت خروجی را روی <strong>Video</strong> قرار بده.</div>
-      <div>برای مرجع تصویری، <strong>Ingredients</strong> را انتخاب کن. در بعضی نسخه‌های رابط ممکن است نام مشابهی مثل <strong>Components</strong> ببینی.</div>
-      <div>روی <strong>Add Image</strong> بزن و عکس‌های واقعی خودت را اضافه کن؛ یا آن‌ها را از بخش Uploads / Media داخل Prompt بکش.</div>
-      <div>حتماً بررسی کن عکس‌ها واقعاً به Prompt متصل شده باشند؛ صرف دیده‌شدن در All Media به معنی استفاده‌شدن در Generation نیست.</div>
-      <div>پرامپت موردنظر را در کادر اصلی Paste کن، تنظیمات زیر را انتخاب کن و سپس Generate را بزن.</div>
-    </div>
-    <h3>تنظیمات پیشنهادی</h3>
+    <div class="step-head"><div class="num">۲</div><div><h2>داخل Google Flow این تنظیمات را بزن</h2><p class="muted">روی لپ‌تاپ یا گوشی، مسیر کلی همین است؛ فقط جای دکمه‌ها ممکن است کمی متفاوت باشد.</p></div></div>
+    <ol>
+      <li>روی <b>New Project</b> بزن.</li>
+      <li>حالت ساخت را روی <b>Video</b> قرار بده.</li>
+      <li><b>Ingredients / Components</b> را انتخاب کن.</li>
+      <li>عکس‌های خودت را اضافه کن و مطمئن شو واقعاً به Prompt وصل شده‌اند؛ فقط داخل All Media نباشند.</li>
+      <li>پرامپت پایین را کپی کن و فقط دو جای مشخص‌شده را عوض کن.</li>
+      <li>Generate را بزن و بهترین خروجی را نگه دار.</li>
+    </ol>
     <div class="settings">
       <div class="setting"><b>Mode</b><small>Video</small></div>
       <div class="setting"><b>Reference</b><small>Ingredients / Components</small></div>
-      <div class="setting"><b>Aspect Ratio</b><small>9:16</small></div>
-      <div class="setting"><b>Outputs</b><small>x1 برای تست اول</small></div>
-      <div class="setting"><b>Model</b><small>Gemini Omni Flash</small></div>
-      <div class="setting"><b>Duration</b><small>10s یا متناسب با طول دیالوگ</small></div>
+      <div class="setting"><b>Aspect Ratio</b><small>9:16 برای ریلز و استوری</small></div>
+      <div class="setting"><b>Outputs</b><small>x1 برای مصرف کمتر اعتبار</small></div>
+      <div class="setting"><b>Model</b><small>Omni Flash</small></div>
+      <div class="setting"><b>Duration</b><small>۸ یا ۱۰ ثانیه، بسته به طول متن</small></div>
     </div>
-    <div class="tip"><strong>برای نتیجه بهتر:</strong> پرامپت اصلی را انگلیسی بنویس، اما دیالوگ فارسی را دقیقاً داخل گیومه فارسی قرار بده. در پرامپت تأکید کن که دیالوگ نباید ترجمه، خلاصه یا حذف شود.</div>
-  </section>
-
-  <section class="section card" id="voice">
-    <div class="step-head"><div class="num">۳</div><div><h2>صدای فارسی را تنظیم کن</h2><p class="muted">برای فارسی، دو مسیر داری: صدای انتخابی Flow یا آواتار/صدای شخصی.</p></div></div>
-    <div class="mini-grid">
-      <div class="mini"><h3>روش سریع</h3><p>در حالت <strong>Omni Flash → Video → Ingredients</strong> از زیر Prompt روی <strong>Add Image → Voices</strong> بزن و یک صدای مرد جوان انتخاب کن. سپس در پرامپت زبان، لحن و ریتم را مشخص کن.</p></div>
-      <div class="mini"><h3>برای شباهت بیشتر به صدای خودت</h3><p>اگر در حسابت قابلیت Avatar یا Custom Voice فعال است، از آن استفاده کن. برای Avatar رسمی، بعد از ساخت، در Prompt بنویس <span class="code">@me</span>.</p></div>
-    </div>
-    <div class="prompt-box"><div class="prompt-top"><div class="prompt-title">PROMPT — استایل صدای فارسی</div><button onclick="copyPrompt('voicePrompt')">کپی پرامپت</button></div><pre id="voicePrompt">Speak ONLY in fluent, natural Persian (Farsi).
-Use a modern, casual Tehran Persian accent.
-Use a natural young Persian male voice.
-The delivery should feel spontaneous, warm, confident and conversational — not like narration.
-Use natural Persian pronunciation, realistic pauses and subtle emotional reactions.
-Do not translate the Persian dialogue.
-Do not paraphrase it.
-Do not add extra words.
-Speak the exact Persian dialogue exactly as written.
-No subtitles.
-No background voice.</pre></div>
-    <div class="tip info"><strong>نکته:</strong> مدل ممکن است همیشه صدایی دقیقاً مشابه صدای واقعی تو تولید نکند. برای ثبات بیشتر بین چند کلیپ، از یک Voice Reference یا Character/Avatar ثابت استفاده کن.</div>
+    <div class="links"><a class="btn primary" href="https://labs.google/fx/fa/tools/flow" target="_blank" rel="noopener">ورود مستقیم به Google Flow فارسی ↗</a></div>
   </section>
 
   <section class="section card" id="prompt">
-    <div class="step-head"><div class="num">۴</div><div><h2>پرامپت کامل همان ویدیوی «نسخه هوشمند»</h2><p class="muted">این نسخه برای قرارگرفتن آواتار در سمت چپ کادر و نگاه‌کردن به فردی در سمت راست نوشته شده است.</p></div></div>
-    <div class="prompt-box"><div class="prompt-top"><div class="prompt-title">MASTER PROMPT — نسخه کامل و حرفه‌ای</div><button onclick="copyPrompt('masterPrompt')">کپی پرامپت</button></div><pre id="masterPrompt">Use ALL uploaded real photographs as STRICT, ABSOLUTE, PRIMARY identity references for the SAME real person.
+    <div class="step-head"><div class="num">۳</div><div><h2>این پرامپت کامل را کپی کن</h2><p class="muted">فقط دو قسمت <b>YOUR DIALOGUE</b> و <b>YOUR SCENARIO</b> را با متن خودت جایگزین کن.</p></div></div>
+
+    <div class="placeholder">
+      <div class="place"><strong>جایگاه ۱ — متن و دیالوگ</strong><code>[YOUR DIALOGUE HERE]</code><p>اینجا دقیقاً همان جمله‌هایی را بنویس که می‌خواهی آواتارت به فارسی بگوید. بهتر است کوتاه، محاوره‌ای و مناسب ۸ تا ۱۰ ثانیه باشد.</p></div>
+      <div class="place"><strong>جایگاه ۲ — سناریو</strong><code>[YOUR SCENARIO HERE]</code><p>اینجا توضیح بده کجا هستی، چه کاری انجام می‌دهی، حس و انرژی ویدیو چیست و چه حرکت‌هایی دوست داری انجام شود.</p></div>
+    </div>
+
+    <div class="prompt-box">
+      <div class="prompt-top"><div class="prompt-title">MASTER PROMPT — ساخت ویدیوی تولید محتوا با چهره واقعی خودت</div><button class="copy" onclick="copyPrompt('masterPrompt')">کپی پرامپت</button></div>
+      <pre id="masterPrompt">Use all uploaded real photos as the STRICT, PRIMARY and ABSOLUTE identity references for the SAME real person.
 
 HIGHEST PRIORITY: EXACT IDENTITY PRESERVATION.
 
-The person in the generated video MUST be unmistakably the exact same real individual shown in the uploaded photographs.
+Create an ultra-photorealistic vertical social-media video featuring the exact same real person shown in the uploaded reference photos.
 
-Do NOT create a lookalike.
-Do NOT reinterpret the face.
-Do NOT beautify the face.
-Do NOT make the face more symmetrical.
-Do NOT change the person's age, facial structure, natural proportions or identity.
+The generated person must be unmistakably the same individual.
 
-Preserve with extremely high accuracy:
-- exact natural head shape
-- exact face width and face length
-- exact forehead size and proportions
+Preserve with maximum possible accuracy:
+- exact natural face shape and facial proportions
+- exact forehead proportions
 - exact natural hairline
 - exact hairstyle, hair density and hair volume
-- exact eyebrow shape, thickness, angle and spacing
-- exact eye shape, eyelids, eye size and eye spacing
-- exact nose shape, bridge, width, tip and nostrils
+- exact eyebrow shape, thickness and spacing
+- exact eye shape, size, spacing and eyelids
+- exact nose shape, width, bridge, tip and nostrils
 - exact lips, mouth width and natural lip proportions
 - exact cheek volume
-- exact jawline and chin shape
+- exact jawline and chin
 - exact ears
-- exact mustache shape
-- exact beard pattern and facial hair density
+- exact mustache and facial-hair pattern
 - exact natural skin tone
 - exact natural facial asymmetry
-- exact real overall facial proportions
+- exact body proportions and overall real identity
 
-The face must NOT drift, morph or change at any moment during the video.
+Do NOT beautify the person.
+Do NOT redesign or reinterpret the face.
+Do NOT create a generic lookalike.
+Do NOT change the eyes, nose, lips, jawline, hairline, facial hair or facial proportions.
+Do NOT make the face more symmetrical.
+Do NOT stylize the character.
+Do NOT create plastic skin.
 
-REFERENCE PRIORITY:
-Use the frontal reference image as the PRIMARY source for facial identity.
-Use the side/profile reference image ONLY to understand the real head shape, hairstyle, ears and side facial proportions.
-Never average the reference images into a new identity.
-
-SCENE AND COMPOSITION:
-Create one ultra-photorealistic vertical 9:16 talking video.
-Place the person clearly on the LEFT side of the frame.
-Leave clean empty space on the RIGHT side of the frame for another person to be added later during editing.
-The person is speaking directly to another version of himself who is standing outside the frame on SCREEN-RIGHT.
-His body remains natural and relaxed.
-His head, face, eyes and attention are naturally directed toward SCREEN-RIGHT.
-He must NOT stare directly into the camera while speaking.
-
-LANGUAGE:
-The person speaks ONLY Persian.
-Use natural, fluent, conversational Persian with a modern Tehran accent.
-Do not translate the dialogue.
-Do not paraphrase the dialogue.
-Do not remove any sentence.
-Do not combine sentences.
-Do not skip words.
-
-SPEAK THE FOLLOWING DIALOGUE EXACTLY, WORD FOR WORD, IN THIS EXACT ORDER:
-
-"نه خیر، این منم!"
-
-"من نسخه‌ی هوشمند توام!"
-
-"ولی من واقعی‌ترم!"
-
-"باشه بابا، این تویی!"
-
-"ولی من باعث شدم دیگه ساعت‌ها ویدئو ضبط نکنی."
-
-CRITICAL DIALOGUE RULE:
-The sentence "ولی من واقعی‌ترم!" MUST be spoken clearly and completely.
-Do NOT omit it, replace it, shorten it or merge it with another sentence.
-Create a clear short pause before and after this sentence.
-
-PERFORMANCE:
-For "نه خیر، این منم!" speak immediately, confidently and playfully, as if interrupting the other person. Slightly raise the eyebrows and look toward SCREEN-RIGHT.
-
-For "من نسخه‌ی هوشمند توام!" speak proudly and confidently.
-
-For "ولی من واقعی‌ترم!" pause briefly first, then say it clearly and separately with a subtly surprised, amused and confident expression.
-
-Before "باشه بابا، این تویی!" react as if the unseen person on SCREEN-RIGHT has argued back. Give a tiny pause, smile and a small natural laugh, then say the line in a playful, slightly defeated tone.
-
-For the final line "ولی من باعث شدم دیگه ساعت‌ها ویدئو ضبط نکنی." speak confidently as the final punchline and main value proposition.
-
-ENDING:
-After finishing the final sentence, pause briefly, give the person on SCREEN-RIGHT a confident amused smile, slightly nod, then naturally turn the body away and casually walk out of the frame toward SCREEN-LEFT.
-Do not disappear, fade or teleport. Physically walk out of frame.
-
-IDENTITY CONSISTENCY:
-Maintain the exact same real identity during speaking, smiling, laughing, turning the head and walking away.
-Do not create a generic attractive male face.
-Do not alter the eyes, nose, lips, jawline, facial hair, hairstyle or hairline.
-Do not smooth or beautify the skin excessively.
-
-CAMERA:
-Static medium shot.
-No camera movement.
-No zoom.
-No cuts.
-Keep the complete head and upper body visible.
-Keep enough clean space on SCREEN-RIGHT.
-
-ENVIRONMENT:
-Premium modern technology office.
-Dark elegant interior.
-Subtle navy and blue accent lighting.
-Soft professional cinematic lighting.
-Clean realistic background.
-
-AUDIO:
-Clear natural Persian male speech.
-Natural modern Tehran Persian accent.
-No background music.
-No subtitles.
-No on-screen text.
-No additional voices.
-
-FORMAT:
-Vertical 9:16.
-10 seconds.
-One continuous shot.
-Ultra-photorealistic.</pre></div>
-    <div class="tip success"><strong>برای اینکه جمله‌ای حذف نشود:</strong> دیالوگ را کوتاه نگه دار و جمله‌های حیاتی را جداگانه بنویس. اگر مدل باز هم یک جمله را حذف کرد، همان بخش را در یک کلیپ کوتاه‌تر جدا بساز و در تدوین به هم وصل کن.</div>
-  </section>
-
-  <section class="section card" id="custom">
-    <div class="step-head"><div class="num">۵</div><div><h2>پرامپت عمومی برای ساخت آواتار خودت</h2><p class="muted">این قالب را کپی کن و فقط بخش‌های داخل براکت را تغییر بده.</p></div></div>
-    <div class="prompt-box"><div class="prompt-top"><div class="prompt-title">TEMPLATE — برای هر شخص و هر دیالوگ</div><button onclick="copyPrompt('templatePrompt')">کپی پرامپت</button></div><pre id="templatePrompt">Use the uploaded real photographs as STRICT PRIMARY identity references for the SAME real person.
-
-IDENTITY LOCK:
-Preserve the exact real facial identity, face shape, forehead, hairline, hairstyle, eyebrows, eyes, nose, lips, cheeks, jawline, chin, ears, facial hair, skin tone, natural asymmetry and body proportions.
-Do not beautify, stylize, redesign, age, reinterpret or replace the person.
-The face must remain consistent throughout the entire video.
-
-REFERENCE PRIORITY:
-Use the frontal image as the PRIMARY identity reference.
-Use additional images only for angle, hairstyle, clothing and body proportions.
-Never average the references into a new face.
-
-COMPOSITION:
-Place the person on the [LEFT / RIGHT / CENTER] side of the vertical 9:16 frame.
-The person should look naturally toward [SCREEN-RIGHT / SCREEN-LEFT / CAMERA].
-Leave [RIGHT / LEFT] side clean if another person will be added later in editing.
+The face must remain consistent throughout the entire video, including while speaking, smiling, moving and turning.
+No face morphing.
+No identity drift.
+No facial distortion.
 
 LANGUAGE AND VOICE:
-Speak ONLY in fluent natural Persian with a modern casual Tehran accent.
-Use a natural young Persian [male / female] voice.
-Do not translate, paraphrase, shorten, remove or add words.
-Speak the exact Persian dialogue below:
+The person speaks ONLY in natural fluent Persian.
+Use a modern casual Tehran Persian accent.
+Use a natural young Persian male voice that feels warm, confident, conversational and human.
+Use accurate natural Persian lip synchronization.
+Do not translate, paraphrase, shorten or skip the requested dialogue.
+Speak the dialogue exactly as written.
 
-"[دیالوگ دقیق خودت را اینجا بنویس]"
+EXACT DIALOGUE TO SPEAK:
+[YOUR DIALOGUE HERE]
+
+SCENE AND ACTION:
+[YOUR SCENARIO HERE]
 
 PERFORMANCE:
-[حس اجرا را بنویس: confident / playful / surprised / emotional / calm]
-Use natural blinking, breathing, micro-expressions, subtle head movement and realistic hand gestures.
+Act naturally and realistically according to the requested scenario.
+Use natural facial expressions, blinking, breathing, head movement and subtle hand gestures.
+The performance should feel premium, modern, confident and suitable for professional social-media content.
 Do not overact.
+Do not use robotic gestures.
 
-ENDING ACTION:
-[مثال: Smile, turn naturally and walk out of frame toward SCREEN-LEFT.]
-
-CAMERA:
-Static medium shot.
-No cuts.
-No sudden zooms.
-Keep the complete head and upper body visible.
-
-ENVIRONMENT:
-[محیط دلخواه را دقیق بنویس]
-Premium cinematic lighting.
-Realistic depth.
-Clean background.
-
-AUDIO:
-Clear Persian speech.
+CAMERA AND VISUAL QUALITY:
+Vertical 9:16.
+Ultra-photorealistic.
+Premium cinematic social-media aesthetic.
+Professional soft cinematic lighting.
+Realistic human skin texture.
+Realistic hair and facial hair.
+Natural depth of field.
+Keep the face clearly visible.
+Do not crop important facial features.
+No duplicated person unless explicitly requested in the scenario.
+No deformed hands.
+No extra fingers.
 No subtitles.
-No on-screen text.
+No on-screen text unless explicitly requested in the scenario.
 No background dialogue.
 
-FORMAT:
-Vertical 9:16.
-[4 / 6 / 8 / 10] seconds.
-Ultra-photorealistic.</pre></div>
-    <div class="tip"><strong>تغییر جهت نگاه:</strong> برای اینکه آواتار سمت چپ باشد و به فرد سمت راست نگاه کند بنویس <span class="code">Place the person on the LEFT side. Look toward SCREEN-RIGHT.</span> برای حالت برعکس، LEFT و RIGHT را جابه‌جا کن.</div>
+IMPORTANT:
+Identity accuracy is more important than beautification or cinematic stylization.
+The uploaded real photos are the absolute source of truth for the person's identity.</pre>
+    </div>
+    <div class="tip"><strong>فقط همین دو قسمت را تغییر بده:</strong> متن موردنظرت را جای <b>[YOUR DIALOGUE HERE]</b> و سناریویت را جای <b>[YOUR SCENARIO HERE]</b> قرار بده. بقیه پرامپت را دست نزن.</div>
   </section>
 
-  <section class="section card" id="character">
-    <div class="step-head"><div class="num">۶</div><div><h2>ساخت Character ثابت؛ اختیاری ولی کاربردی</h2><p class="muted">وقتی می‌خواهی مرتب با یک نسخه ثابت از خودت ویدیو بسازی.</p></div></div>
-    <div class="steps">
-      <div>از ستون سمت چپ پروژه روی <strong>Characters</strong> بزن.</div>
-      <div>اگر Character دیگری داری، روی <strong>New Character</strong> بزن.</div>
-      <div>یک یا دو عکس واضح از ظاهر واقعی خودت اضافه کن و توضیح هویتی دقیق بنویس.</div>
-      <div>روی <strong>Generate Image</strong> بزن و نتیجه‌ای را که بیشترین شباهت دارد انتخاب کن.</div>
-      <div>برای Character نام انتخاب کن، سپس از بخش Voice یک صدای ثابت انتخاب یا در صورت دسترسی Custom Voice بساز.</div>
-      <div>در ویدیوهای بعدی، داخل Prompt با <strong>@نام‌کاراکتر</strong> او را فراخوانی کن.</div>
+  <section class="section card" id="example">
+    <div class="step-head"><div class="num">۴</div><div><h2>سناریوی آماده برای اولین ویدیو</h2><p class="muted">نمی‌دانی چه بسازی؟ این نمونه را مستقیم استفاده کن.</p></div></div>
+    <div class="example">
+      <h3>متن پیشنهادی</h3>
+      <p>«تا حالا شده بخوای تولید محتوا رو شروع کنی، ولی انقدر ویدیو بگیری و هیچ‌کدوم خوب نشه که کلاً بی‌خیالش بشی؟ من راه ساده‌ترش رو پیدا کردم.»</p>
+      <h3>سناریوی پیشنهادی</h3>
+      <p>شخصیت در یک استودیوی مدرن و پریمیوم تولید محتوا ایستاده است. اطراف او چند گوشی روی سه‌پایه، دوربین، لپ‌تاپ، نورهای استودیویی و چند صفحه شناور از برداشت‌های خراب دیده می‌شود. ابتدا کمی خسته و کلافه است. هنگام صحبت، چند بار به ویدیوهای خراب اطرافش نگاه می‌کند. سپس فضا آرام می‌شود، نور آبی هوشمند و آینده‌نگر روشن می‌شود و محیط از شلوغی به یک فضای منظم، لوکس و تکنولوژیک تبدیل می‌شود. او در پایان با اعتمادبه‌نفس و لبخند طبیعی مستقیم به دوربین نگاه می‌کند.</p>
     </div>
-    <div class="tip info"><strong>Avatar رسمی:</strong> اگر در منوی پروفایل Flow گزینه <b>Create avatar</b> را داری، می‌توانی ثبت چهره و صدا را طبق راهنمای خود Flow کامل کنی و بعد در Prompt از <span class="code">@me</span> استفاده کنی. این قابلیت بسته به منطقه و حساب ممکن است در دسترس نباشد.</div>
-  </section>
+    <div class="prompt-box">
+      <div class="prompt-top"><div class="prompt-title">نمونه آماده برای جایگذاری در دو بخش</div><button class="copy" onclick="copyPrompt('exampleFill')">کپی نمونه</button></div>
+      <pre id="exampleFill">[YOUR DIALOGUE HERE]
+تا حالا شده بخوای تولید محتوا رو شروع کنی، ولی انقدر ویدیو بگیری و هیچ‌کدوم خوب نشه که کلاً بی‌خیالش بشی؟ من راه ساده‌ترش رو پیدا کردم.
 
-  <section class="section card" id="fix">
-    <div class="step-head"><div class="num">۷</div><div><h2>رفع مشکلات رایج</h2><p class="muted">اگر خروجی خوب نشد، معمولاً مشکل از یکی از این موارد است.</p></div></div>
-    <div class="mini-grid">
-      <div class="mini"><h3>چهره عوض شده</h3><p>عکس روبه‌رو را مرجع اصلی قرار بده، تعداد مرجع‌های نامرتبط را کم کن و بخش <b>IDENTITY LOCK</b> را نگه دار. برای تست اول از یک یا دو عکس تمیز استفاده کن.</p></div>
-      <div class="mini"><h3>یک جمله را نگفت</h3><p>دیالوگ طولانی را کوتاه کن، جمله مهم را روی خط جدا قرار بده و صریح بنویس <b>MUST be spoken clearly and completely</b>. در صورت نیاز چند کلیپ کوتاه بساز.</p></div>
-      <div class="mini"><h3>به جهت اشتباه نگاه می‌کند</h3><p>به‌جای «به راست خودش» از واژه دقیق <b>SCREEN-RIGHT</b> یا <b>SCREEN-LEFT</b> استفاده کن و محل قرارگیری کاراکتر را هم صریح بنویس.</p></div>
-      <div class="mini"><h3>عکس‌ها اثر ندارند</h3><p>بررسی کن عکس واقعاً به Prompt به‌عنوان Ingredient/Reference متصل شده باشد. وجود عکس در All Media به‌تنهایی کافی نیست.</p></div>
-      <div class="mini"><h3>Generate ارور می‌دهد</h3><p>برای تست، یک عکس و یک پرامپت کوتاه‌تر استفاده کن، Outputs را روی x1 بگذار و درخواست را ساده‌تر کن. اگر باز خطا بود، متن دقیق ارور را بررسی کن.</p></div>
-      <div class="mini"><h3>صدای فارسی طبیعی نیست</h3><p>دیالوگ را کوتاه و محاوره‌ای بنویس، لحن تهرانی را مشخص کن و از Voice Reference ثابت استفاده کن. تلفظ‌های حساس را ساده‌تر و طبیعی‌تر بنویس.</p></div>
+[YOUR SCENARIO HERE]
+The person is standing in a premium modern content-creation studio. Surround him with realistic smartphones on tripods, cameras, a laptop, studio lights and several elegant floating screens showing failed recording attempts. At first he looks slightly tired and frustrated. While speaking, he naturally reacts to the failed takes around him. Then the chaotic environment smoothly transforms into a clean, luxurious futuristic AI-powered studio with subtle dark navy, metallic and electric-blue lighting. End with the person calm, confident and looking naturally toward the camera with a subtle smile.</pre>
     </div>
-    <div class="tip danger"><strong>واقع‌بینانه:</strong> هیچ پرامپتی شباهت صددرصدی یا Lip Sync بی‌نقص را در هر Generation تضمین نمی‌کند. بهترین نتیجه معمولاً با مرجع تصویری تمیز، دیالوگ کوتاه، یک شخصیت ثابت و چند تست کنترل‌شده به دست می‌آید.</div>
   </section>
 
   <section class="section card">
-    <div class="step-head"><div class="num">✓</div><div><h2>خلاصه سریع</h2><p class="muted">برای اینکه چیزی جا نماند.</p></div></div>
-    <p>۱) یک عکس روبه‌رو و یک عکس سه‌رخ واقعی انتخاب کن.<br>۲) وارد Google Flow شو و New Project بساز.<br>۳) Video + Ingredients/Components + 9:16 + x1 + Omni Flash را انتخاب کن.<br>۴) عکس‌ها را واقعاً به Prompt متصل کن.<br>۵) پرامپت هویت + دیالوگ فارسی را Paste کن.<br>۶) برای جهت نگاه از SCREEN-RIGHT یا SCREEN-LEFT استفاده کن.<br>۷) اگر جمله حذف شد، ویدیو را به چند کلیپ کوتاه‌تر تقسیم کن.<br>۸) خروجی‌ها را در CapCut یا ادیتور دلخواهت کنار ویدیوی واقعی خودت مونتاژ کن.</p>
+    <div class="step-head"><div class="num">۵</div><div><h2>برای نتیجه بهتر این سه نکته را رعایت کن</h2></div></div>
+    <ul class="checklist">
+      <li>متن خیلی طولانی نده؛ برای ۸ تا ۱۰ ثانیه، جمله‌های کوتاه بهتر اجرا می‌شوند.</li>
+      <li>اگر چهره تغییر کرد، از عکس روبه‌رو و واضح‌تر استفاده کن و تعداد عکس‌های مبهم را کمتر کن.</li>
+      <li>اگر جمله‌ای حذف شد، متن را کوتاه‌تر کن و همان جمله را جدا و واضح داخل بخش دیالوگ بنویس.</li>
+    </ul>
   </section>
 
-  <section class="cta-card">
-    <span class="badge">SOHEIL AI SYSTEMS</span>
-    <h2>هوش مصنوعی فقط برای ساخت محتوا نیست.</h2>
-    <p class="muted">هدف اصلی، ساخت سیستم‌هایی است که زمان و کار دستی را کمتر کنند و به کسب‌وکار اجازه بدهند سریع‌تر حرکت کند.</p>
+  <section class="section card cta">
+    <h2><span class="gradient">فقط محتوا را هوشمند نکن؛ خود کسب‌وکارت را سیستم‌سازی کن.</span></h2>
+    <p class="lead">اگر هنوز بخش‌هایی از کسب‌وکارت را دستی و تکراری انجام می‌دهی، می‌شود با برنامه‌نویسی، اتوماسیون و هوش مصنوعی آن‌ها را سریع‌تر، دقیق‌تر و مقیاس‌پذیرتر کرد.</p>
     <div class="hero-actions">
-      <a class="hero-btn instagram" href="https://www.instagram.com/soheil.ai.systems/" target="_blank" rel="noopener">@soheil.ai.systems در اینستاگرام ↗</a>
-      <a class="hero-btn" href="https://www.soheilai.com/" target="_blank" rel="noopener">وب‌سایت Soheil AI Systems ↗</a>
-      <a class="hero-btn primary" href="https://labs.google/fx/fa/tools/flow" target="_blank" rel="noopener">شروع ساخت در Google Flow ↗</a>
+      <a class="btn primary" href="https://www.instagram.com/soheil.ai.systems/" target="_blank" rel="noopener">مشاهده پیج Soheil AI Systems ↗</a>
+      <a class="btn" href="https://soheilai.com" target="_blank" rel="noopener">ورود به soheilai.com ↗</a>
     </div>
+    <p style="margin-top:20px;font-weight:800">جهان با سرعت 10X در حال حرکته؛ حواست باشه عقب نمونی. ⚡</p>
   </section>
 
   <footer class="footer">
     <strong>SOHEIL AI SYSTEMS</strong><br>
-    Full-Stack Development · AI Systems · Automation
-    <div class="footer-links">
-      <a href="https://www.instagram.com/soheil.ai.systems/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.soheilai.com/" target="_blank" rel="noopener">Website</a>
+    <span class="muted">Full-Stack Development · AI Systems · Automation</span>
+    <div class="socials">
+      <a href="https://www.instagram.com/soheil.ai.systems/" target="_blank" rel="noopener">@soheil.ai.systems</a>
+      <a href="https://soheilai.com" target="_blank" rel="noopener">soheilai.com</a>
       <a href="https://labs.google/fx/fa/tools/flow" target="_blank" rel="noopener">Google Flow</a>
     </div>
-    <p>جهان با سرعت 10X در حال حرکت است؛ حواست باشد عقب نمانی.</p>
   </footer>
 </main>
 <div class="copy-toast" id="toast">پرامپت کپی شد ✓</div>
 <script>
-async function copyPrompt(id){const el=document.getElementById(id),text=el.innerText;try{await navigator.clipboard.writeText(text)}catch(e){const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove()}const toast=document.getElementById('toast');toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1800)}
+async function copyPrompt(id){
+  const el=document.getElementById(id),text=el.innerText;
+  try{await navigator.clipboard.writeText(text)}catch(e){
+    const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();
+  }
+  const toast=document.getElementById('toast');toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1800)
+}
 </script>
 </body>
 </html>
