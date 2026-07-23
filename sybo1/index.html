@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#02050b">
+<title>از یک عکس محصول، ویدیوی تبلیغاتی سینمایی بساز | SYBO EP.01</title>
+<meta name="description" content="آموزش رایگان و مرحله‌به‌مرحله تبدیل عکس ساده محصول به ویدیوی تبلیغاتی سینمایی با ChatGPT و Google Flow؛ همراه با پرامپت‌های آماده و قابل کپی.">
+<style>
+:root{--bg:#02050b;--panel:rgba(8,20,38,.88);--line:rgba(173,214,255,.18);--blue:#2388ff;--cyan:#78d9ff;--soft:rgba(240,247,255,.74);--ok:#53e7b2;--gold:#d6b86f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 5%,rgba(35,136,255,.26),transparent 30rem),linear-gradient(180deg,#071425,#02050b 52%,#010307);color:#fff;font-family:Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.95;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 90%)}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 28px));margin:auto;position:relative;z-index:2}.hero{padding:56px 0 24px}.heroGrid{display:grid;grid-template-columns:1.12fr .88fr;gap:34px;align-items:center}.brand{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:999px;padding:8px 13px;font-weight:800;font-size:13px}.dot{width:9px;height:9px;border-radius:50%;background:var(--blue);box-shadow:0 0 24px var(--blue)}.eyebrow{margin-top:18px;color:var(--cyan);font-weight:800;font-size:13px}.hero h1{font-size:clamp(38px,6.4vw,74px);line-height:1.12;margin:8px 0 14px;letter-spacing:-1.5px}.metal{background:linear-gradient(180deg,#fff 0%,#9da9b8 42%,#f5f8fc 56%,#67778a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 7px 18px rgba(183,216,255,.15))}.lead{color:var(--soft);font-size:clamp(15px,2vw,19px);max-width:760px}.actions,.nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}.btn{padding:11px 16px;border-radius:13px;border:1px solid var(--line);background:rgba(255,255,255,.05);font-weight:800}.btn.primary{background:linear-gradient(135deg,#2388ff,#1254ae);box-shadow:0 15px 42px rgba(35,136,255,.25)}.flow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:22px}.flow span,.nav a{padding:8px 11px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.035);font-size:13px}.arrow{color:var(--cyan)}.visual{position:relative;min-height:580px;display:grid;place-items:center;perspective:1200px}.stage{position:absolute;inset:5% 0;border:1px solid rgba(85,167,255,.28);border-radius:36px;background:linear-gradient(145deg,rgba(10,31,58,.75),rgba(3,9,18,.42));box-shadow:0 30px 100px rgba(0,0,0,.6),inset 0 0 70px rgba(35,136,255,.08);overflow:hidden}.stage:after{content:"";position:absolute;left:5%;right:5%;bottom:5%;height:34%;border:2px solid rgba(116,215,255,.24);border-radius:50%;transform:rotateX(72deg);box-shadow:0 0 48px rgba(35,136,255,.22)}.sybo{position:relative;z-index:3;max-width:100%;max-height:560px;object-fit:contain;filter:drop-shadow(0 30px 35px rgba(0,0,0,.55));transition:.18s}.float{position:absolute;z-index:4;border:1px solid rgba(116,215,255,.28);border-radius:15px;background:rgba(4,17,33,.76);backdrop-filter:blur(14px);padding:11px 13px;font-size:12px;box-shadow:0 0 35px rgba(35,136,255,.2)}.f1{top:16%;right:-2%}.f2{bottom:14%;left:-3%}.section{margin:24px 0}.card{background:linear-gradient(180deg,rgba(11,29,53,.9),rgba(4,11,21,.94));border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:0 28px 90px rgba(0,0,0,.52);overflow:hidden}.head{display:flex;gap:14px;align-items:flex-start}.num{flex:0 0 48px;height:48px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(145deg,#309cff,#123f8b);font-weight:900;box-shadow:0 12px 30px rgba(35,136,255,.26)}h2{font-size:clamp(23px,4vw,32px);margin:0;line-height:1.45}h3{margin:20px 0 8px}.muted{color:var(--soft)}.roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}.road,.setting{border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:18px;padding:17px}.road b{display:block;font-size:18px}.road small,.setting small{color:var(--soft)}ul.check{list-style:none;padding:0;margin:14px 0 0}.check li{padding:6px 31px 6px 0;position:relative}.check li:before{content:"✓";position:absolute;right:0;color:var(--ok);font-weight:900}.tip{margin-top:16px;border-right:3px solid var(--gold);background:rgba(214,184,111,.075);padding:14px 16px;border-radius:13px}.success{border-right-color:var(--ok);background:rgba(83,231,178,.07)}.settings{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-top:16px}.setting b{display:block}.prompt{margin-top:18px;background:#01040a;border:1px solid var(--line);border-radius:20px;overflow:hidden}.promptTop{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;background:rgba(255,255,255,.045);border-bottom:1px solid var(--line);font-weight:900}.copy{border:0;border-radius:10px;padding:9px 13px;background:linear-gradient(135deg,#2388ff,#1254ae);color:#fff;font-family:inherit;font-weight:900;cursor:pointer}pre{margin:0;padding:19px;direction:ltr;text-align:left;white-space:pre-wrap;overflow-wrap:anywhere;color:#fff;font:12.5px/1.8 Consolas,Monaco,monospace}.custom{display:grid;grid-template-columns:1fr auto;gap:10px;margin-top:16px}.custom input{border:1px solid var(--line);border-radius:13px;padding:12px 14px;background:#030912;color:#fff;font-family:inherit}.cta{text-align:center}.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);opacity:0;transition:.25s;background:#101b2a;border:1px solid var(--line);padding:10px 15px;border-radius:12px;z-index:99}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}footer{text-align:center;padding:32px 0 50px;color:var(--soft)}
+@media(max-width:900px){.heroGrid{grid-template-columns:1fr}.visual{min-height:500px}.roadmap{grid-template-columns:1fr}.settings{grid-template-columns:1fr 1fr}}@media(max-width:560px){.wrap{width:min(100% - 20px,1120px)}.hero{padding-top:38px}.visual{min-height:455px}.sybo{max-height:440px}.float{display:none}.card{padding:18px}.settings,.custom{grid-template-columns:1fr}.btn{width:100%;text-align:center}.promptTop{align-items:flex-start}pre{font-size:11.2px;padding:14px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="hero">
+<div class="heroGrid">
+<div>
+<div class="brand"><span class="dot"></span> SOHEIL AI SYSTEMS · SYBO EP.01</div>
+<div class="eyebrow">آموزش رایگان تولید محتوای تبلیغاتی با هوش مصنوعی</div>
+<h1><span class="metal">از یک عکس محصول، ویدیوی تبلیغاتی سینمایی بساز</span></h1>
+<p class="lead">همان روشی که برای آنلاین‌شاپ سایبو استفاده کردیم: یک عکس معمولی از محصول را به تصویر تبلیغاتی حرفه‌ای تبدیل کن و بعد در Google Flow از آن یک ویدیوی داستان‌دار بساز.</p>
+<div class="actions"><a class="btn primary" href="https://chatgpt.com/" target="_blank" rel="noopener">شروع با ChatGPT ↗</a><a class="btn" href="https://labs.google/fx/fa/tools/flow" target="_blank" rel="noopener">باز کردن Google Flow ↗</a></div>
+<div class="flow"><span>عکس معمولی</span><b class="arrow">←</b><span>تصویر حرفه‌ای</span><b class="arrow">←</b><span>Google Flow</span><b class="arrow">←</b><span>ویدیوی سینمایی</span></div>
+</div>
+<div class="visual" id="hero"><div class="stage"></div><img class="sybo" src="https://raw.githubusercontent.com/soheil78ai/sybo1/main/assets/sybo.png" alt="SYBO"><div class="float f1">AI CONTENT<br><b>IMAGE → VIDEO</b></div><div class="float f2">9:16 · 1080p<br><b>READY TO CREATE</b></div></div>
+</div>
+<nav class="nav"><a href="#road">مسیر سریع</a><a href="#photo">۱. عکس محصول</a><a href="#imagePromptSec">۲. پرامپت عکس</a><a href="#flowSec">۳. Google Flow</a><a href="#videoPromptSec">۴. پرامپت ویدیو</a></nav>
+</section>
+<section class="section card" id="road"><div class="head"><div class="num">⚡</div><div><h2>کل فرایند در سه حرکت</h2><p class="muted">بدون مدل، لوکیشن و تیم فیلم‌برداری شروع کن.</p></div></div><div class="roadmap"><div class="road"><b>01 · عکس ساده</b><small>یک عکس واضح و معمولی از محصولت بگیر.</small></div><div class="road"><b>02 · تصویر تبلیغاتی</b><small>همان محصول را بدون تغییر در یک صحنه حرفه‌ای قرار بده.</small></div><div class="road"><b>03 · ویدیوی سینمایی</b><small>تصویر را وارد Flow کن و سناریوی آماده را اجرا کن.</small></div></div></section>
+<section class="section card" id="photo"><div class="head"><div class="num">۱</div><div><h2>یک عکس معمولی و واضح از محصول بگیر</h2><p class="muted">کیفیت عکس مرجع روی حفظ جزئیات محصول اثر مستقیم دارد.</p></div></div><ul class="check"><li>محصول کامل داخل کادر باشد.</li><li>نور کافی و رنگ واقعی محصول مشخص باشد.</li><li>لوگو، دوخت، زیپ، دکمه و جزئیات مهم واضح باشند.</li><li>برای لباس، عکس کامل ست یا خود لباس را استفاده کن.</li></ul><div class="tip success"><b>نکته:</b> هدف تغییر محصول نیست؛ همان محصول واقعی باید حرفه‌ای‌تر نمایش داده شود.</div></section>
+<section class="section card" id="imagePromptSec"><div class="head"><div class="num">۲</div><div><h2>عکس را به ChatGPT بده و این پرامپت را کپی کن</h2><p class="muted">برای حفظ هویت محصول و ساخت فریم تبلیغاتی حرفه‌ای.</p></div></div><div class="prompt"><div class="promptTop"><span>پرامپت ساخت تصویر تبلیغاتی</span><button class="copy" data-copy="imagePrompt">کپی پرامپت</button></div><pre id="imagePrompt">Use the uploaded product photo as the STRICT and ABSOLUTE source-of-truth reference for the real product.
+
+CRITICAL PRODUCT PRESERVATION:
+The product in the final image must remain exactly the same real product shown in the uploaded reference.
+
+Preserve with maximum possible accuracy:
+- exact design and silhouette
+- exact proportions
+- exact colors
+- exact fabric and material appearance
+- exact texture
+- exact stitching and seams
+- exact buttons, zippers, pockets and hardware
+- exact patterns, prints, logos, labels and branding
+- every visible product detail
+
+Do NOT redesign the product.
+Do NOT change its color.
+Do NOT add or remove product features.
+Do NOT replace logos or branding.
+Do NOT create a different version of the product.
+
+Create an ultra-realistic premium fashion advertising image.
+
+SCENE:
+An attractive adult fashion model is wearing the exact uploaded product in a sophisticated modern dressing area before going out to an important evening event.
+
+The environment is elegant, contemporary and realistic:
+- premium modern interior
+- large mirror
+- subtle architectural lighting
+- dark neutral colors
+- soft warm practical lights
+- tasteful cinematic atmosphere
+
+The model makes a final natural adjustment to the exact product while looking confident and stylish.
+The product must be the visual hero of the image.
+The pose should feel candid and effortless, not like a traditional catalog pose.
+
+CAMERA:
+Vertical 9:16 composition.
+Cinematic fashion campaign photography.
+Medium-full body framing.
+35mm cinematic lens feeling.
+Shallow depth of field.
+Natural realistic skin.
+High-end commercial lighting.
+Realistic fabric physics and folds.
+Photorealistic premium fashion advertising quality.
+
+Keep the entire product clearly visible.
+Do not crop important product details.
+
+No text.
+No captions.
+No additional logos.
+No fantasy elements.
+No distorted hands or body.
+No artificial plastic skin.</pre></div><div class="tip"><b>قبل از مرحله بعد:</b> رنگ، فرم و جزئیات محصول را با عکس اصلی مقایسه کن. اگر تغییر کرده، تصویر را دوباره بساز.</div></section>
+<section class="section card" id="flowSec"><div class="head"><div class="num">۳</div><div><h2>تصویر حرفه‌ای را وارد Google Flow کن</h2><p class="muted">پروژه جدید بساز، Video را انتخاب کن، تصویر را اضافه کن و پرامپت مرحله بعد را وارد کن.</p></div></div><div class="settings"><div class="setting"><b>نسبت تصویر</b><small>9:16 برای Reels و Story</small></div><div class="setting"><b>مدت پیشنهادی</b><small>حدود 8 تا 10 ثانیه</small></div><div class="setting"><b>تعداد خروجی</b><small>1x برای تست اولیه</small></div><div class="setting"><b>خروجی نهایی</b><small>1080 × 1920</small></div></div></section>
+<section class="section card" id="videoPromptSec"><div class="head"><div class="num">۴</div><div><h2>نام فروشگاهت را وارد کن و پرامپت را کپی کن</h2><p class="muted">سناریو: آماده‌شدن سریع مدل → ورود به مهمانی → سؤال درباره استایل → معرفی آنلاین‌شاپ.</p></div></div><div class="custom"><input id="shop" value="سایبو" placeholder="نام آنلاین‌شاپ"><button class="copy" id="apply">اعمال نام فروشگاه</button></div><div class="prompt"><div class="promptTop"><span>پرامپت کامل Google Flow</span><button class="copy" data-copy="videoPrompt">کپی پرامپت</button></div><pre id="videoPrompt" data-template="Use the uploaded product image as the strict visual reference for the clothing/product.
+
+Create a fast-paced, ultra-realistic cinematic vertical 9:16 fashion advertisement.
+
+IMPORTANT PRODUCT CONSISTENCY:
+Keep the exact same product throughout the entire video. Preserve the overall design, colors, materials and recognizable details. Do not redesign or change the product.
+
+The model is an attractive adult fashion model.
+
+STORY:
+Start immediately with a fast cinematic fashion montage.
+
+The model quickly gets ready and puts on the product/outfit. Show this through stylish rapid match cuts rather than a slow dressing process:
+- grabs the product/outfit
+- quick transition: wearing it
+- adjusts the outfit naturally
+- quick close-up of product details and fabric
+- final mirror check
+
+Keep this preparation sequence fast, energetic and visually satisfying.
+
+Then immediately transition to the same model confidently entering a stylish modern evening party.
+
+The party should feel premium, social and realistic, with adult guests, elegant atmospheric lighting and a fashionable modern environment.
+
+The model walks through the party wearing the exact same product/outfit.
+
+Another stylish adult guest naturally notices the outfit, approaches and asks in Persian:
+«این استایلو از کجا خریدی؟»
+
+The model smiles naturally and replies in Persian:
+«از آنلاین‌شاپ {{SHOP_NAME}}.»
+
+IMPORTANT SPEECH:
+Both speakers must speak fluent natural Persian with a contemporary Tehran accent. The conversation should feel spontaneous and realistic, like two friends talking at a party.
+
+MUSIC:
+Add energetic premium fashion music from the very beginning. Use modern cinematic electronic fashion music with a stylish beat. Lower the music naturally during dialogue and raise it again after the final line.
+
+CAMERA:
+Fast cinematic match cuts during preparation. Dynamic close-ups of product details and fabric. Smooth tracking shot entering the party. Natural medium shot during the conversation.
+
+STYLE:
+Ultra-realistic.
+Premium fashion campaign.
+Modern Instagram Reel aesthetic.
+Realistic skin and fabric.
+High-end commercial cinematography.
+
+No subtitles.
+No captions.
+No random text.
+No product redesign.
+No distorted hands or bodies.
+No unnecessary scene changes.">Use the uploaded product image as the strict visual reference for the clothing/product.
+
+Create a fast-paced, ultra-realistic cinematic vertical 9:16 fashion advertisement.
+
+IMPORTANT PRODUCT CONSISTENCY:
+Keep the exact same product throughout the entire video. Preserve the overall design, colors, materials and recognizable details. Do not redesign or change the product.
+
+The model is an attractive adult fashion model.
+
+STORY:
+Start immediately with a fast cinematic fashion montage.
+
+The model quickly gets ready and puts on the product/outfit. Show this through stylish rapid match cuts rather than a slow dressing process:
+- grabs the product/outfit
+- quick transition: wearing it
+- adjusts the outfit naturally
+- quick close-up of product details and fabric
+- final mirror check
+
+Keep this preparation sequence fast, energetic and visually satisfying.
+
+Then immediately transition to the same model confidently entering a stylish modern evening party.
+
+The party should feel premium, social and realistic, with adult guests, elegant atmospheric lighting and a fashionable modern environment.
+
+The model walks through the party wearing the exact same product/outfit.
+
+Another stylish adult guest naturally notices the outfit, approaches and asks in Persian:
+«این استایلو از کجا خریدی؟»
+
+The model smiles naturally and replies in Persian:
+«از آنلاین‌شاپ سایبو.»
+
+IMPORTANT SPEECH:
+Both speakers must speak fluent natural Persian with a contemporary Tehran accent. The conversation should feel spontaneous and realistic, like two friends talking at a party.
+
+MUSIC:
+Add energetic premium fashion music from the very beginning. Use modern cinematic electronic fashion music with a stylish beat. Lower the music naturally during dialogue and raise it again after the final line.
+
+CAMERA:
+Fast cinematic match cuts during preparation. Dynamic close-ups of product details and fabric. Smooth tracking shot entering the party. Natural medium shot during the conversation.
+
+STYLE:
+Ultra-realistic.
+Premium fashion campaign.
+Modern Instagram Reel aesthetic.
+Realistic skin and fabric.
+High-end commercial cinematography.
+
+No subtitles.
+No captions.
+No random text.
+No product redesign.
+No distorted hands or bodies.
+No unnecessary scene changes.</pre></div><div class="tip success"><b>برای خروجی بهتر:</b> اگر Flow بخشی از سناریو را جا انداخت، ویدیو را در دو شات کوتاه بساز و در CapCut به هم وصل کن.</div></section>
+<section class="section card cta"><h2>این تازه قسمت اول سایبوئه 🤖⚡</h2><p class="muted">آموزش‌های بعدی را از پیج Soheil AI Systems دنبال کن.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="https://www.instagram.com/soheil.aisystems/" target="_blank" rel="noopener">Instagram · @soheil.aisystems ↗</a></div></section>
+</main><footer>SOHEIL AI SYSTEMS · AI · AUTOMATION · SYSTEMS</footer><div class="toast" id="toast">پرامپت کپی شد ✓</div>
+<script>
+const toast=document.getElementById('toast');function show(t='پرامپت کپی شد ✓'){toast.textContent=t;toast.classList.add('show');clearTimeout(window.tt);window.tt=setTimeout(()=>toast.classList.remove('show'),1700)}document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{const e=document.getElementById(b.dataset.copy),t=e.innerText;try{await navigator.clipboard.writeText(t);show()}catch(_){const r=document.createRange();r.selectNodeContents(e);const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();show()}});const shop=document.getElementById('shop'),vp=document.getElementById('videoPrompt');document.getElementById('apply').onclick=()=>{vp.innerText=vp.dataset.template.replaceAll('{{SHOP_NAME}}',(shop.value||'نام فروشگاه شما').trim());show('نام فروشگاه اعمال شد ✓')};const hero=document.getElementById('hero'),sybo=hero.querySelector('.sybo');hero.onmousemove=e=>{const r=hero.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;sybo.style.transform=`rotateY(${x*7}deg) rotateX(${-y*5}deg) translate(${x*7}px,${y*5}px)`};hero.onmouseleave=()=>sybo.style.transform='none';
+</script>
+</body></html>
