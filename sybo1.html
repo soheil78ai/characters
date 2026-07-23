@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#02050b">
+<title>SYBO EP.01 | Soheil AI Systems</title>
+<style>html,body{margin:0;min-height:100%;background:#02050b;color:#fff;font-family:Tahoma,Arial,sans-serif}body{display:grid;place-items:center}.loading{text-align:center;padding:30px}.dot{width:12px;height:12px;border-radius:50%;background:#2388ff;box-shadow:0 0 24px #2388ff;margin:0 auto 16px;animation:p 1s infinite alternate}@keyframes p{to{transform:scale(1.7);opacity:.5}}</style>
+</head>
+<body>
+<div class="loading"><div class="dot"></div><div>در حال بارگذاری آموزش سایبو...</div></div>
+<script>
+fetch('https://raw.githubusercontent.com/soheil78ai/characters/main/sybo1/index.html?'+Date.now(),{cache:'no-store'})
+.then(r=>{if(!r.ok)throw new Error('load failed');return r.text()})
+.then(html=>{document.open();document.write(html);document.close()})
+.catch(()=>{document.body.innerHTML='<div style="padding:30px;text-align:center">بارگذاری صفحه انجام نشد. لطفاً دوباره تلاش کنید.</div>'});
+</script>
+</body>
+</html>
